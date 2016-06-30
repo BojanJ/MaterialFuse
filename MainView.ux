@@ -1,0 +1,41 @@
+<App>
+	<!-- INCLUDE THE COLOR PALLETE -->
+	<ColorPalette/>
+	<!-- Declare the Icon font (place in ./fonts folder) -->
+    <Font File="fonts/MaterialIcons-Regular.ttf" ux:Global="materialIcon" />
+    <!-- Declare the Icon class -->
+    <Text Font="materialIcon" ux:Class="Icon" Color="text/icons"></Text>
+
+	<!-- Declare the Roboto font (place in ./fonts folder) -->
+    <Font File="fonts/Roboto-Medium.ttf" ux:Global="medium" />
+    <Font File="fonts/Roboto-Regular.ttf" ux:Global="regular" />
+
+	<!-- MAIN PANEL -->
+	<DockPanel Color="background_color"> 
+		<StatusBarBackground Dock="Top"/>
+			
+			<Toolbar />
+
+			<ScrollView>
+				<DockPanel>
+					<Panel Dock="Top" ux:Name="Button">
+							<FlatButton />
+							<RaisedButton />
+					</Panel>
+
+					<Panel Dock="Top" ux:Name="Fab">
+							<FloatingButton />
+							<MiniFloatingButton />
+					</Panel>
+
+					<Panel Dock="Top" ux:Name="Card">
+							<Card />
+					</Panel>
+
+				</DockPanel>
+			</ScrollView>
+			
+		<BottomBarBackground Dock="Bottom"/>
+	</DockPanel>
+
+</App>

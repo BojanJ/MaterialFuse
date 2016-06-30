@@ -1,0 +1,14 @@
+<Panel ux:Class="Card">
+	<Rectangle Margin="10" Color="White" CornerRadius="2">
+		<StackPanel>
+			<Image File="Assets/card.png" />
+				<Text Value="Title" Color="primary_text" Margin="16, 24, 16, 0" Font="regular" FontSize="24" />
+				<Text Value="Subtitle goes here" Color="secondary_text" Margin="16, 8, 16, 16" Font="regular" FontSize="14" />
+				<StackPanel Padding="8" Orientation="Horizontal">
+					<FlatButton Margin="-16" />
+					<FlatButton Margin="-16" />
+				</StackPanel>
+		</StackPanel>
+		<DropShadow />
+	</Rectangle>
+</Panel>
