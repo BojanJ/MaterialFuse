@@ -1,6 +1,6 @@
 <DockPanel ux:Class="MiniFloatingButton" Padding="16">
 	<Circle ux:Name="btn" Height="40" Width="40" Color="accent"  Dock="Left">
-		<Icon FontSize="24" Color="text/icons" Margin="0,8" TextAlignment="Center">&#xE145;</Icon>
+		<Icon FontSize="24" Color="icons" Margin="0,8" TextAlignment="Center">&#xE145;</Icon>
 	</Circle>
 	<DropShadow />
 </DockPanel>

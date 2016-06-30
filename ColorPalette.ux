@@ -5,7 +5,7 @@
 	<float4 ux:Global="accent"       	  ux:Value="#FF9800"   />
 	<float4 ux:Global="primary_text"      ux:Value="#212121"   />
 	<float4 ux:Global="secondary_text"	  ux:Value="#727272"  />
-	<float4 ux:Global="text/icons" 		  ux:Value="#FFFFFF"   />
+	<float4 ux:Global="icons" 		  ux:Value="#FFFFFF"   />
 	<float4 ux:Global="divider"			  ux:Value="#727272"   />
 	<float4 ux:Global="background_color"  ux:Value="#FAFAFA"   />
 </Panel>

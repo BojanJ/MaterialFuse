@@ -4,7 +4,7 @@
 	<!-- Declare the Icon font (place in ./fonts folder) -->
     <Font File="fonts/MaterialIcons-Regular.ttf" ux:Global="materialIcon" />
     <!-- Declare the Icon class -->
-    <Text Font="materialIcon" ux:Class="Icon" Color="text/icons"></Text>
+    <Text Font="materialIcon" ux:Class="Icon" Color="icons"></Text>
 
 	<!-- Declare the Roboto font (place in ./fonts folder) -->
     <Font File="fonts/Roboto-Medium.ttf" ux:Global="medium" />
