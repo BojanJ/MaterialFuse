@@ -32,8 +32,12 @@
 							<Card />
 					</Panel>
 
+
 				</DockPanel>
 			</ScrollView>
+
+
+					<Snackbar Dock="Bottom" />
 			
 		<BottomBarBackground Dock="Bottom"/>
 	</DockPanel>

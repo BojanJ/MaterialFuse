@@ -1,0 +1,9 @@
+<DockPanel ux:Class="Snackbar">
+	<Rectangle ux:Name="snack" Width="100%" Height="48" Color="#323232">
+		<Text Value="Archived" Dock="Left" Font="regular" FontSize="14" Color="icons" Margin="24,14"/>
+		<Text Value="UNDO" Font="medium" Color="accent" FontSize="14"  Alignment="CenterRight" Margin="24,14">
+			<Clicked>
+			</Clicked>
+		</Text>
+	</Rectangle>
+</DockPanel>
