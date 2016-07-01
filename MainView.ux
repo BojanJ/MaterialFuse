@@ -23,9 +23,11 @@
 
 						<RaisedButton BtnText="EXPLORE" BtnColor="White" BtnTextColor="accent" Alignment="Center"/>
 
-						<FloatingButton BtnColor="accent" BtnIcon="&#xE8B6;" BtnTextColor="icons" Alignment="Center"/>
+						<FloatingButton BtnColor="accent" BtnIcon="&#xE145;" BtnTextColor="icons" Alignment="Center"/>
 
-						<MiniFloatingButton BtnColor="accent" BtnIcon="&#xE8B6;" BtnTextColor="icons" Alignment="Center"/>
+						<MiniFloatingButton BtnColor="accent" BtnIcon="&#xE145;" BtnTextColor="icons" Alignment="Center"/>
+
+						<Card Title="Title" Subtitle="Subtitle goes here" BtnText1="SHARE" BtnText2="EXPLORE" BtnTextColor="accent"/>
 
 				</StackPanel>
 			</ScrollView>

@@ -1,12 +1,19 @@
 <Panel ux:Class="Card">
+
+	<string ux:Property="Title" />
+	<string ux:Property="Subtitle" />
+	<string ux:Property="BtnText1" />
+	<string ux:Property="BtnText2" />
+	<float4 ux:Property="BtnTextColor" />
+
 	<Rectangle Margin="10" Color="White" CornerRadius="2">
 		<StackPanel>
 			<Image File="Assets/card.png" />
-				<Text Value="Title" Color="primary_text" Margin="16, 24, 16, 0" Font="regular" FontSize="24" />
-				<Text Value="Subtitle goes here" Color="secondary_text" Margin="16, 8, 16, 16" Font="regular" FontSize="14" />
+				<Text Value="{Property this.Title}" Color="primary_text" Margin="16, 24, 16, 0" Font="regular" FontSize="24" />
+				<Text Value="{Property this.Subtitle}" Color="secondary_text" Margin="16, 8, 16, 16" Font="regular" FontSize="14" />
 				<StackPanel Padding="8" Orientation="Horizontal">
-					<FlatButton Margin="-16" />
-					<FlatButton Margin="-16" />
+					<FlatButton Margin="-16" BtnText="{Property this.BtnText1}" BtnTextColor="{Property this.BtnTextColor}"/>
+					<FlatButton Margin="-16" BtnText="{Property this.BtnText2}" BtnTextColor="{Property this.BtnTextColor}"/>
 				</StackPanel>
 		</StackPanel>
 		<DropShadow />
