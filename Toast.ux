@@ -1,0 +1,10 @@
+<WrapPanel ux:Class="Toast">
+
+	<string ux:Property="Text" />
+
+	    <Rectangle ux:Name="btn" Height="36" CornerRadius="20" Color="#323232" Padding="16,0" Margin="16">
+
+			<Text Value="{Property this.Text}" Font="medium" Color="icons" FontSize="14"  Alignment="CenterLeft"/>
+			
+		</Rectangle>
+</WrapPanel>

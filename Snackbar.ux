@@ -1,4 +1,4 @@
-<DockPanel ux:Class="Snackbar">
+<Panel ux:Class="Snackbar">
 
 	<string ux:Property="Text" />
 	<string ux:Property="BtnText" />
@@ -11,4 +11,5 @@
 			</Clicked>
 		</Text>
 	</Rectangle>
-</DockPanel>
+
+</Panel>

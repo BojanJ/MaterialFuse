@@ -21,6 +21,7 @@
 
 						<FlatButton BtnText="SHARE" BtnTextColor="accent" Alignment="Center"/>
 
+
 						<RaisedButton BtnText="EXPLORE" BtnColor="White" BtnTextColor="accent" Alignment="Center"/>
 
 						<FloatingButton BtnColor="accent" BtnIcon="&#xE145;" BtnTextColor="icons" Alignment="Center"/>
@@ -29,10 +30,13 @@
 
 						<Card Title="Title" Subtitle="Subtitle goes here" BtnText1="SHARE" BtnText2="EXPLORE" BtnTextColor="accent"/>
 
+						<Snackbar Text="Archived" BtnText="UNDO" BtnTextColor="accent"/>
+
+						<Toast Text="Error: Check your network connection" Alignment="Center"/>
+
 				</StackPanel>
 			</ScrollView>
 			
-		<Snackbar Dock="Bottom" Text="Archived" BtnText="UNDO" BtnTextColor="accent"/>
 		<BottomBarBackground Dock="Bottom"/>
 	</DockPanel>
 
