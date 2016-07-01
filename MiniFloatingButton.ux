@@ -1,6 +1,12 @@
-<DockPanel ux:Class="MiniFloatingButton" Padding="16">
-	<Circle ux:Name="btn" Height="40" Width="40" Color="accent"  Dock="Left">
-		<Icon FontSize="24" Color="icons" Margin="0,8" TextAlignment="Center">&#xE145;</Icon>
+<WrapPanel ux:Class="MiniFloatingButton" >
+	
+	<string ux:Property="BtnIcon" />
+	<float4 ux:Property="BtnTextColor" />
+	<float4 ux:Property="BtnColor" />
+
+	<Circle ux:Name="btn" Height="40" Width="40" Color="{Property this.BtnColor}" Margin="16">
+		<Icon FontSize="24" Color="{Property this.BtnTextColor}" Margin="0,8" TextAlignment="Center" Value="{Property this.BtnIcon}" />
 	</Circle>
 	<DropShadow />
-</DockPanel>
+	
+</WrapPanel>

@@ -14,31 +14,23 @@
 	<DockPanel Color="background_color"> 
 		<StatusBarBackground Dock="Top"/>
 			
-			<Toolbar />
+			<Toolbar Color="primary" Title="Title"/>
 
 			<ScrollView>
-				<DockPanel>
-					<Panel Dock="Top" ux:Name="Button">
-							<FlatButton />
-							<RaisedButton />
-					</Panel>
+				<StackPanel>
 
-					<Panel Dock="Top" ux:Name="Fab">
-							<FloatingButton />
-							<MiniFloatingButton />
-					</Panel>
+						<FlatButton BtnText="SHARE" BtnTextColor="accent" Alignment="Center"/>
 
-					<Panel Dock="Top" ux:Name="Card">
-							<Card />
-					</Panel>
+						<RaisedButton BtnText="EXPLORE" BtnColor="White" BtnTextColor="accent" Alignment="Center"/>
 
+						<FloatingButton BtnColor="accent" BtnIcon="&#xE8B6;" BtnTextColor="icons" Alignment="Center"/>
 
-				</DockPanel>
+						<MiniFloatingButton BtnColor="accent" BtnIcon="&#xE8B6;" BtnTextColor="icons" Alignment="Center"/>
+
+				</StackPanel>
 			</ScrollView>
-
-
-					<Snackbar Dock="Bottom" />
 			
+		<Snackbar Dock="Bottom" Text="Archived" BtnText="UNDO" BtnTextColor="accent"/>
 		<BottomBarBackground Dock="Bottom"/>
 	</DockPanel>
 

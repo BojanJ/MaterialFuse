@@ -1,10 +1,14 @@
 <!-- TOOLBAR START-->
-<StackPanel Dock="Top" Color="primary" ux:Class="Toolbar">
-    <Panel Height="56" Color="primary" Padding="16, 0">
+<StackPanel Dock="Top" ux:Class="Toolbar">
+
+    <string ux:Property="Title" />
+    <float4 ux:Property="Color" />
+
+    <Panel Height="56" Color="{Property this.Color}" Padding="16, 0">
         <Panel>
 		  <Icon FontSize="24" Margin="0,16">&#xE5D2;</Icon>
     	</Panel>
-        <Text Value="Title" Alignment="CenterLeft" Font="medium" FontSize="20" Margin="56,0" TextColor="#fff" />
+        <Text Value="{Property this.Title}" Alignment="CenterLeft" Font="medium" FontSize="20" Margin="56,0" TextColor="#fff" />
         <StackPanel Orientation="Horizontal" Alignment="Right" >
         <Icon FontSize="24"  Margin="16,16">&#xE8B6;</Icon>
         <Icon FontSize="24"  Margin="0,16">&#xE5D4;</Icon>

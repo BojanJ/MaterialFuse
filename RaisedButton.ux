@@ -1,9 +1,21 @@
-<DockPanel ux:Class="RaisedButton" Padding="16">
-	<Rectangle ux:Name="btn" Height="36" Color="White" CornerRadius="2" Dock="Right" Padding="16,0">
-		<WhileHovering>
+<WrapPanel ux:Class="RaisedButton">
+	
+	<string ux:Property="BtnText" />
+	<float4 ux:Property="BtnTextColor" />
+	<float4 ux:Property="BtnColor" />
 
+	<Rectangle ux:Name="btn" Height="36" Color="{Property this.BtnColor}" CornerRadius="2" Padding="16,0" Margin="16">
+
+		<WhileHovering>
+			<Change btn.Color="#f1f1f1" />
 		</WhileHovering>
-		<Text Value="EXPLORE" Font="medium" Color="primary_text" FontSize="14"  Alignment="CenterLeft"/>
+
+		<Text Value="{Property this.BtnText}" Font="medium" Color="{Property this.BtnTextColor}" FontSize="14"  Alignment="CenterLeft"/>
+	
 	</Rectangle>
 	<DropShadow />
-</DockPanel>
+
+</WrapPanel>
+
+
+
