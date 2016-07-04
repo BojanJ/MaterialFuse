@@ -6,7 +6,10 @@
 
     <Panel Height="56" Color="{Property this.Color}" Padding="16, 0">
         <Panel>
-		  <Icon FontSize="24" Margin="0,16">&#xE5D2;</Icon>
+            <!-- MENU ICON -->
+          <Icon FontSize="24" Margin="0,16">&#xE5D2;</Icon>
+            <!-- BACK ICON -->
+          <!-- <Icon FontSize="24" Margin="0,16">&#xE5C4;</Icon> -->
     	</Panel>
         <Text Value="{Property this.Title}" Alignment="CenterLeft" Font="medium" FontSize="20" Margin="56,0" TextColor="#fff" />
         <StackPanel Orientation="Horizontal" Alignment="Right" >

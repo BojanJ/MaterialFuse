@@ -1,0 +1,27 @@
+<DockPanel ux:Class="Sidebar">
+
+	<StackPanel ux:Class="MenuItem" Orientation="Horizontal" Height="48" Color="White" Padding="16,0">
+		<string ux:Property="Icon" />
+		<string ux:Property="Text" />	
+
+		<Icon FontSize="24" Color="secondary_text" Alignment="CenterLeft" Value="{Property this.Icon}" />
+		<Text Value="{Property this.Text}" Color="primary_text" Margin="32,0,0,0" Alignment="CenterLeft" Font="medium"/>
+	</StackPanel>
+
+
+
+	       <Rectangle ux:Name="menu" Width="280" Height="100%" Color="White">
+
+				<StackPanel>
+					<Rectangle Color="accent" Width="100%" Height="158" />
+
+					<MenuItem Text="Inbox" Icon="&#xE168;"/>			
+					<MenuItem Text="Starred" Icon="&#xE838;"/>			
+					<MenuItem Text="Sent mail" Icon="&#xE163;"/>			
+					<MenuItem Text="Drafts" Icon="&#xE151;"/>			
+
+				</StackPanel>
+
+        	<DropShadow />
+        </Rectangle>
+</DockPanel>

@@ -6,7 +6,7 @@
 	    <Rectangle ux:Name="btn" Height="36" CornerRadius="2" Dock="Left" Padding="16,0" Margin="16">
 
 			<WhileHovering>
-				<Change btn.Color="#00000012" />
+				<Change btn.Color="#00000012" Duration="0.2" />
 			</WhileHovering>
 
 			<Text Value="{Property this.BtnText}" Font="medium" Color="{Property this.BtnTextColor}" FontSize="14"  Alignment="CenterLeft"/>

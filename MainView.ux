@@ -9,20 +9,24 @@
 	<!-- Declare the Roboto font (place in ./fonts folder) -->
     <Font File="fonts/Roboto-Medium.ttf" ux:Global="medium" />
     <Font File="fonts/Roboto-Regular.ttf" ux:Global="regular" />
+	
+	<EdgeNavigator ux:Name="EdgeNavigator" HitTestMode="LocalBoundsAndChildren">
+	<!-- Add a panel handled by the EdgeNavigator -->
+		
+		<Sidebar EdgeNavigation.Edge="Left"/>
 
 	<!-- MAIN PANEL -->
 	<DockPanel Color="background_color"> 
 		<StatusBarBackground Dock="Top"/>
 			
-			<Toolbar Color="primary" Title="Title"/>
+			<Toolbar Color="primary" Title="Title" />
 
 			<ScrollView>
 				<StackPanel>
 
 						<FlatButton BtnText="SHARE" BtnTextColor="accent" Alignment="Center"/>
 
-
-						<RaisedButton BtnText="EXPLORE" BtnColor="White" BtnTextColor="accent" Alignment="Center"/>
+						<RaisedButton BtnText="EXPLORE" BtnColor="White" BtnTextColor="primary_text" Alignment="Center"/>
 
 						<FloatingButton BtnColor="accent" BtnIcon="&#xE145;" BtnTextColor="icons" Alignment="Center"/>
 
@@ -39,5 +43,7 @@
 			
 		<BottomBarBackground Dock="Bottom"/>
 	</DockPanel>
+
+</EdgeNavigator>
 
 </App>
