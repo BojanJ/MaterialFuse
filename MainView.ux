@@ -19,7 +19,7 @@
 	<DockPanel Color="background_color"> 
 		<StatusBarBackground Dock="Top"/>
 			
-			<Toolbar Color="primary" Title="Title" />
+			<Toolbar Color="primary" Title="Title"/>
 
 			<ScrollView>
 				<StackPanel>

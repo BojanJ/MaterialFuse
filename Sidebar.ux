@@ -1,25 +1,36 @@
-<DockPanel ux:Class="Sidebar">
+<DockPanel ux:Class="Sidebar" >
 
-	<StackPanel ux:Class="MenuItem" Orientation="Horizontal" Height="48" Color="White" Padding="16,0">
+	<DockPanel ux:Class="MenuItem"  Height="48"  Padding="16,0">
 		<string ux:Property="Icon" />
 		<string ux:Property="Text" />	
+		<string ux:Property="Label" />	
 
-		<Icon FontSize="24" Color="secondary_text" Alignment="CenterLeft" Value="{Property this.Icon}" />
-		<Text Value="{Property this.Text}" Color="primary_text" Margin="32,0,0,0" Alignment="CenterLeft" Font="medium"/>
-	</StackPanel>
+			<WhileHovering>
+				<Change this.Color="#d3d3d3" />
+			</WhileHovering>
 
-
+		<Icon FontSize="24" Dock="Left" Color="secondary_text" Alignment="CenterLeft" Value="{Property this.Icon}" />
+		<Text Value="{Property this.Text}" Color="primary_text" FontSize="14" Margin="32,0,0,0" Alignment="CenterLeft" Font="medium"/>
+		<Text Value="{Property this.Label}" Color="primary_text" FontSize="14" Dock="Right" Alignment="CenterLeft" Font="medium"/>
+	</DockPanel>
 
 	       <Rectangle ux:Name="menu" Width="280" Height="100%" Color="White">
 
 				<StackPanel>
+
 					<Rectangle Color="accent" Width="100%" Height="158" />
 
-					<MenuItem Text="Inbox" Icon="&#xE168;"/>			
+					<MenuItem Text="Inbox" Icon="&#xE168;" Label="3"/>			
 					<MenuItem Text="Starred" Icon="&#xE838;"/>			
 					<MenuItem Text="Sent mail" Icon="&#xE163;"/>			
-					<MenuItem Text="Drafts" Icon="&#xE151;"/>			
+					<MenuItem Text="Drafts" Icon="&#xE151;" Label="2"/>			
+	
+					<Rectangle Width="100%" Height="1" Color="#d3d3d3" />
 
+					<MenuItem Text="Settings" Icon="&#xE8B8;"/>			
+
+					<Rectangle Width="100%" Height="1" Color="#d3d3d3" />
+					
 				</StackPanel>
 
         	<DropShadow />

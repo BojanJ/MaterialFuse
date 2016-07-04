@@ -7,7 +7,11 @@
     <Panel Height="56" Color="{Property this.Color}" Padding="16, 0">
         <Panel>
             <!-- MENU ICON -->
-          <Icon FontSize="24" Margin="0,16">&#xE5D2;</Icon>
+          <Icon FontSize="24" Margin="0,16">&#xE5D2;
+<!--                 <Clicked>
+                    <Set EdgeNavigator.Active="menu" />
+                </Clicked> -->
+          </Icon>
             <!-- BACK ICON -->
           <!-- <Icon FontSize="24" Margin="0,16">&#xE5C4;</Icon> -->
     	</Panel>
