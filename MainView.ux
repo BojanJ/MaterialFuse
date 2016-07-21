@@ -24,6 +24,8 @@
 			<ScrollView>
 				<StackPanel>
 
+						<Chip Text="Hello World" Alignment="Center" />
+
 						<FlatButton BtnText="SHARE" BtnTextColor="accent" Alignment="Center"/>
 
 						<RaisedButton BtnText="EXPLORE" BtnColor="White" BtnTextColor="primary_text" Alignment="Center"/>
@@ -37,6 +39,8 @@
 						<Snackbar Text="Archived" BtnText="UNDO" BtnTextColor="accent"/>
 
 						<Toast Text="Error: Check your network connection" Alignment="Center"/>
+
+
 
 				</StackPanel>
 			</ScrollView>
