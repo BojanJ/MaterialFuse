@@ -1,0 +1,10 @@
+<WrapPanel ux:Class="Chip">
+
+	<string ux:Property="Text" />
+
+	    <Rectangle ux:Name="btn" Height="32" CornerRadius="20" Color="#e4e4e4" Padding="12,0" Margin="16">
+
+			<Text Value="{Property this.Text}" Font="regular" Color="#575757" FontSize="13"  Alignment="CenterLeft" Margin="0,0,4,0"/>
+
+		</Rectangle>
+</WrapPanel>
