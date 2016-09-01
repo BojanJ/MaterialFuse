@@ -5,14 +5,14 @@
 <TextInputHint ux:Property="InputHint" />	
 <Panel Dock="Top">
 		<!--Rectangle Fill="#FFFFFF" Height="20"/-->
-		<Text ux:Name="labeltop" Value="{Property PlaceholderText}" Color="#5AB301" Visibility="Hidden" FontSize="16"/>
+		<Text ux:Name="labeltop" Value="{Property PlaceholderText}" Color="#303F9F" Visibility="Hidden" FontSize="18"/>
 	</Panel>
 <Panel Dock="Bottom">
 	
-	<TextInput ux:Name="input" Background="#FAFAFA" Value="{Property this.Value}" Width="100%" MaxLength="{Property this.MaxLength}" InputHint="{Property this.InputHint}" >
+	<TextInput ux:Name="input" Background="#FAFAFA" Value="{Property this.Value}" Width="100%" MaxLength="{Property this.MaxLength}" InputHint="{Property this.InputHint}" FontSize="22" >
 
-		<Text ux:Name="label" Value="{Property PlaceholderText}" Color="#359AD1" FontSize="20" />
-		<Rectangle ux:Name="bottomLine" Fill="#BDBDBD" Height="5%" Alignment="Bottom" Layer="Background"/> 
+		<Text ux:Name="label" Value="{Property PlaceholderText}" Color="#BDBDBD" FontSize="22" />
+		<Rectangle ux:Name="bottomLine" Fill="#9E9E9E" Height="5%" Alignment="Bottom" Layer="Background"/> 
 
 		<WhileContainsText>
 			<Change labeltop.Visibility="Visible" />
@@ -21,10 +21,10 @@
 		</WhileContainsText>
 
 		<WhileFocused>
-		<Change bottomLine.Fill="#5AB301" />
-		<Change label.Color="#5AB301" />
-		<Change label.FontSize="16" />
-		<Move X="0" Y="-20" Target="label" Duration="0.3" />	
+		<Change bottomLine.Fill="#3F51B5" />
+		<Change label.Color="#303F9F" />
+		<Change label.FontSize="18" />
+		<Move X="0" Y="-22" Target="label" Duration="0.3" />	
 	</WhileFocused>
 
 	</TextInput>

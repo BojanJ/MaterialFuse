@@ -26,7 +26,7 @@
 
 						<Chip Text="Enter Name" Alignment="Center" />
 
-						<FloatingLabel PlaceholderText="Hello World" MaxLength="10" Margin="20, 10, 20, 0" />
+						<FloatingLabel PlaceholderText="Enter Your Name" Margin="20, 10, 20, 0" />
 
 						<FlatButton BtnText="SHARE" BtnTextColor="accent" Alignment="Center"/>
 
